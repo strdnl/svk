@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<title>SUBVAULTk</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+   <link rel="icon" href="klogo2.ico" sizes="16x16">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Courier+Prime&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6,button {font-family: 'Courier Prime', monospace;}body, html {height: 100%}
+p {line-height: 2}
+.bgimg{
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}.bgimg {background-image: url("door.gif")}
+</style>
+<body>
+<!-- Header / Home-->
+<header class="w3-display-container w3-wide bgimg w3-grayscale-min" id="home">
+
+
+ <span class="w3-button w3-wide w3-black" onclick="w3_open()">menu</span>
+
+  <div class="w3-display-middle w3-text-black w3-center " style="white-space:nowrap;">
+<span class="w3-center w3-padding-large w3-black w3-large w3-wide">
+    _sub vault k _</span>
+   
+  </div>
+
+
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-white w3-animate-left" style="z-index:3;width:300px;display:none;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-right w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    
+    
+    <p class="w3-text-black"></p>
+  </div>
+  <div class="w3-bar-block">
+    <a href="https://script.google.com/macros/s/AKfycbwalDkUcCvyd6L0rlqUATd488jBkuAzaLnNeQP5uw/exec#" target="_blank" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>\submit</a> 
+
+    <a href="#" onclick="w3_open2(xxx2)" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>links</a>
+  </div>
+  <div class="w3-panel w3-large">
+    
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Content -->
+<nav class="w3-bar w3-white w3-animate-right" style="display:none" id="cdnt"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close2()" class="w3-right w3-padding w3-hover-grey w3-xlarge" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a> 
+<p class="w3-text-black" id="xxxmxxx" style="display:none"><b>rules</b><br><br>
+
+</p>
+
+
+<div class="w3-content w3-wide" id="xxx2" style="display:none">
+<a href="https://drive.google.com/open?id=1JYrKnHZX-cwjXKJ6gNejqWKbbyNUNogs" target="_blank" class="w3-large" >1.1</a>
+ </div>
+
+
+   </div></nav>
+
+</header>
+
+
+<script>
+var cdata;
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+function w3_open2(data) {
+ w3_close();
+  cdnt.style.display = "block";
+   data.style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+cdata=data;
+}
+ 
+function w3_close2() {
+cdata.style.display = "none";
+  cdnt.style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
